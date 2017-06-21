@@ -1,35 +1,86 @@
-.items-menu li a{
+.items-menu li a {
     font-size: 20px;
-    color:white;
-   
+    color: white;
     font-family: "ubuntu"
 }
 
-.quehago li a{
-    color: #900C3F; 
+.quehago li a {
+    color: #900C3F;
 }
 
-.cabecera{
+.cabecera {
     background-color: #EF5F23;
 }
-.scrolldown{
+
+.scrolldown {
     margin-bottom: 5vh;
     color: white;
 }
 
-.nav-title{
+.nav-title {
     text-align: center;
 }
-.nombre{
+
+.nombre {
     font-family: 'Monoton', cursive;
     color: #900C3F;
     font-size: 5em;
 }
-.nav-title h4{
+
+.nav-title h4 {
     color: white;
     font-size: 2rem
 }
 
-.presentacion{
+.titulo-nombre {
+    font-size: 3em;
+    color: #900C3F;
     font-family: 'Bitter', serif;
+    text-align: center;
+}
+
+.texto {
+    text-align: justify;
+    padding: 1em;
+    margin-left: 1em;
+}
+
+.presentacion {
+    font-family: 'Bitter', serif;
+}
+
+.post {
+    font-family: "ubuntu";
+    color: white;
+    background-color: #1B5F5E;
+    font-size: 3em;
+    width: 30vw;
+    text-align: center;
+    padding: 1em;
+    margin: 1em;
+}
+
+.post a {
+    text-decoration: none;
+    color: white;
+}
+
+.contenedor-cita{
+    text-align: right;
+}
+.citas {
+    color: #900C3F;
+    font-family:'Ubuntu', sans-serif;
+    font-style: italic;
+    font-size: 1.5em;
+}
+
+.azul{
+    color:#1B5F5E;
+}
+
+.azul-titulo{
+    color:#1B5F5E;
+    font-family: 'Bitter', serif;
+    text-align: center;
 }

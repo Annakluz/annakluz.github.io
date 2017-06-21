@@ -2,3 +2,17 @@ body{
     display: grid;
     grid-template-rows: 105vh auto;
 }
+
+.QuienSoy{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.textoinicio-contenedor{
+    display: grid;
+    align-items: center;
+}
+.skills{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid grid-template-rows: auto;
+}

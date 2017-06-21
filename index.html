@@ -10,19 +10,20 @@
     <link rel="stylesheet" href="css/grid.css">
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Bitter|Ubuntu" rel="stylesheet">
-   <link href="https://fonts.googleapis.com/css?family=Allerta+Stencil|Bungee+Inline|Monoton|Rammetto+One|Sigmar+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Allerta+Stencil|Bungee+Inline|Monoton|Rammetto+One|Sigmar+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:700i" rel="stylesheet">
     <title>PORTAFOLIO</title>
 </head>
 
 <body>
     <div class="uk-position-relative cabecera">
-       <!-- <img src="#" alt=""> -->
+        <!-- <img src="#" alt=""> -->
         <div class="uk-position-center nav-title">
             <h1 class="nombre">ANNA KARINA LUZ DURAN</h1>
             <h4>Desarrolladora Front-End & Diseñadora Industrial</h4>
         </div>
         <a class="uk-button uk-button-primary" href="#quien-soy" uk-scroll>
-        <span uk-icon="icon: chevron-down; ratio: 4" class="uk-position-bottom-center scrolldown"></span>
+            <span uk-icon="icon: chevron-down; ratio: 4" class="uk-position-bottom-center scrolldown"></span>
         </a>
         <div class="uk-position-top">
             <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
@@ -31,7 +32,7 @@
                         <li class="uk-active"><a href="#">INICIO</a></li>
                         <li><a href="#quien-soy">QUIEN SOY</a></li>
                         <li>
-                            <a href="#">QUE HAGO</a>
+                            <a href="#queHago">QUE HAGO</a>
                             <div class="uk-navbar-dropdown">
                                 <ul class="uk-nav uk-navbar-dropdown-nav quehago">
                                     <li class="uk-active"><a href="#">SKILLS</a></li>
@@ -51,24 +52,56 @@
         </div>
     </div>
     <section class="about">
+        <div class="titulo-nombre">
+            Soy Anna
+        </div>
+        <article id="quien-soy" class="QuienSoy">
 
-        <article id="quien-soy">
-            <h2 class="presentacion">
-                Soy Anna
-            </h2>
-            <p class="texto">Radico en la Ciudad de México, me encanta construir cosas, resolver problemas y entender al usuario, por esa razón estoy tan involucrada en el desarrollo web. Actualmente estoy inmersa principalmente en el desarrollo con HTML5 CSS3 y Javascript pero mis capacidades no se limitan a ello.
-            Estudie Diseño Industrial en la Universidad Aútonoma Metropolitana lo que me ha permitido estudiar más a fondo al usuario y su interacción con las diferentes interfaces. 
-             
-            </p>
-            <a href="#" class="trabajarjuntos">Trabajemos juntos</a>
 
+            <div class="textoinicio-contenedor">
+
+
+                <p class="texto">Radico en la Ciudad de México, me encanta construir cosas, resolver problemas y entender al usuario, por esa razón estoy tan involucrada en el desarrollo web. Actualmente estoy inmersa principalmente en el desarrollo con HTML5 CSS3 y Javascript pero mis capacidades no se limitan a ello. Estudie Diseño Industrial en la Universidad Aútonoma Metropolitana lo que me ha permitido estudiar más a fondo al usuario y su interacción con las diferentes interfaces.
+                
+
+                </p>
+            </div>
+
+            <div class="post" uk-scrollspy="cls: uk-animation-slide-right; repeat: true">
+
+                <a href="#">MIRA MI CV</a>
+            </div>
         </article>
     </section>
-    <section class="skills"></section>
+    <div>
+        <div class>
+            <div class="">
+                <h3 class=" titulo-nombre" id="queHago">¿En que puedo ayudarte?</h3>
+
+            </div>
+        </div>
+    </div>
+    <section class="skills">
+        <div class="cont-programacion">
+            <div>
+            <h2 class="azul-titulo">Desarrollo websites</h2>
+            </div>
+            <div>
+                <p class="texto"> Cuando codeeo utilizo diversos frameworks de CSS3 como Boostrap, Materialize y Uikit y algunas librerias de Javascript entre las que destacan Jquery y Vanilla. Mantenerme al tanto de las actualizaciones y novedades es uno de mis principales pasatiempos. 
+                Tener un codigo limpio y entendible es mi principal meta.  </p>
+            </div>
+            <div class="contenedor-cita">
+                <p class="citas">"Talk is Cheap, Show me The Code"</p>
+                <p class="azul">...anónimo</p>
+            </div>
+        </div>
+        <div>
+        </div>
+    </section>
     <section class="carouselpictures"></section>
     <section class="quest"></section>
     <section class="foot"></section>
-    
+
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/uikit.min.js"></script>
     <script src="js/uikit-icons.min.js"></script>
