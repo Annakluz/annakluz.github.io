@@ -87,9 +87,12 @@
 .skills{
     margin-right:1em;
 }
+.cont-programacion{
+    
+}
 
 .logos-contenedor img{
-    width: 60%;
+    width: 70%;
     min-width: 50%;
 }
 .html{
@@ -106,4 +109,8 @@
 .jquery{
     grid-row: 3/4;
     grid-column: 3/4
+}
+
+.negro{
+    background-color: #1B1C1C;
 }
