@@ -15,4 +15,22 @@ body{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid grid-template-rows: auto;
+    grid-column-gap: 3rem;
+    
+    
+}
+
+.cont-programacion{
+    display: grid;
+    align-items: center;
+}
+
+.logos-contenedor{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, 15vh);
+    align-items: center;
+    padding: 2rem;
+    
+    
 }

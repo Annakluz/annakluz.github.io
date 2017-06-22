@@ -84,3 +84,26 @@
     font-family: 'Bitter', serif;
     text-align: center;
 }
+.skills{
+    margin-right:1em;
+}
+
+.logos-contenedor img{
+    width: 60%;
+    min-width: 50%;
+}
+.html{
+    grid-column: 2 / 3;
+}
+.materialize{
+    grid-column: 3/4;
+}
+.uikit{
+ grid-row: 3/4;
+    
+}
+
+.jquery{
+    grid-row: 3/4;
+    grid-column: 3/4
+}
