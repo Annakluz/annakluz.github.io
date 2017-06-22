@@ -114,3 +114,72 @@
 .negro{
     background-color: #1B1C1C;
 }
+
+.red{
+    color:#900C3F;
+}
+
+.red a{
+    color:#1B5F5E;
+    text-decoration: none;
+        
+}
+
+.proyecto-img{
+    width: 
+}
+
+.contenedor-titulo{
+  padding: 5px;
+text-align: center;
+}
+
+.titulo-blanco{
+    color: white;
+    font-family: 'Bitter', serif;
+    text-align: center;
+    
+}
+#mensaje{
+    width: 55vw;
+    font-family:'Ubuntu', sans-serif;
+    background-color: #1B1C1C;
+    color:white;
+    margin-top: 3vh;
+    
+}
+
+
+input{
+    height: 5vh;
+    font-family:'Ubuntu', sans-serif;
+    background-color: #1B1C1C;
+    color: white;
+    border: 2px solid #900C3F;
+    border-radius: 1vh;
+}
+
+textarea{
+    font-family:'Ubuntu', sans-serif;
+    background-color: #1B1C1C;
+    color: white;
+    border: 2px solid #900C3F;
+    border-radius: 1vh;
+}
+
+.boton{
+    text-align: center;
+    margin: 1vh;
+    
+}
+.enviar{
+    background-color: #900C3F;
+    color:white;
+    font-family: 'Bitter', serif;
+    border: 0px;
+    
+}
+
+.foot{
+    background-color: #1B1C1C;
+}

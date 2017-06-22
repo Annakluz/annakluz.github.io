@@ -38,5 +38,28 @@ body{
 .proyectos-contenedor{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 30vh 30vh;
+    grid-template-rows: 60vh;
+    grid-gap: 1em;
+    justify-items: center;
+    align-items: center;
+    
+}
+
+.quest{
+    display: grid;
+    grid-template-columns:1fr;
+    grid-template-rows: auto;
+    justify-items: center;
+}
+
+.area-texto{
+    display: grid;
+    justify-items: center;
+}
+
+.foot{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid grid-template-rows: 10vh;
+    justify-items: center;
 }
