@@ -138,6 +138,7 @@ text-align: center;
     color: white;
     font-family: 'Bitter', serif;
     text-align: center;
+    font-size: 3em;
     
 }
 #mensaje{
@@ -182,4 +183,5 @@ textarea{
 
 .foot{
     background-color: #1B1C1C;
+    padding: 3rem
 }
