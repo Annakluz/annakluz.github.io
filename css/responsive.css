@@ -5,7 +5,15 @@
     }
     
     .QuienSoy{
-        
+        grid-template-columns: 1fr;
+    }
+    
+    .skills{
+        grid-template-columns: 1fr;
+    }
+    
+    .proyectos-contenedor{
+        grid-template-columns: 1fr;
     }
     
 }
