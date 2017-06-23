@@ -9,7 +9,7 @@
 }
 
 .cabecera {
-    background-color: #EF5F23;
+    background-color: #FF5851;
 }
 
 .scrolldown {
@@ -184,4 +184,22 @@ textarea{
 .foot{
     background-color: #1B1C1C;
     padding: 3rem
+}
+
+.sacudir{
+    margin-left:-8vh;
+}
+
+.delado{
+    margin-left: 2rem;
+    color: #900C3F;
+    
+}
+
+.post a:hover{
+    color: #900C3F;
+}
+
+.actualizacion{
+    text-align: center;
 }
