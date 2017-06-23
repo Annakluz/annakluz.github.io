@@ -1,4 +1,4 @@
-let cargarPagina = function () {
+var cargarPagina = function () {
 
     UIkit.scrollspy(element, options);
     UIkit.nav(element, options);
