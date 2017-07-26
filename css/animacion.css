@@ -18,7 +18,7 @@
     animation: sacudir 1.5s infinite;
 }
 
-.sacudir:hover {
+.sacudir: {
     animation: none;
 }
 
