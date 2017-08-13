@@ -94,8 +94,8 @@ body {
     background-position: right;
 }
 
-.header__menu {
-    
+.menu__responsive--fix {
+    margin-top: -8vh;
     
 }
 
