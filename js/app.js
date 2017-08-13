@@ -1,9 +1,2 @@
-var cargarPagina = function () {
-
-    UIkit.scrollspy(element, options);
-    UIkit.nav(element, options);
-    UIkit.scroll(element, options);
-};
-
-
-$(document).ready(cargarPagina);
+UIkit.offcanvas(element, options);
+UIkit.icon(element, options);

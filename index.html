@@ -3,213 +3,204 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="responsive.css">
-    <link rel="stylesheet" href="css/uikit.min.css">
+    <title>Document</title>
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/grid.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/animacion.css">
-    <link rel="stylesheet" href="css/responsive.css">
     <link href="https://fonts.googleapis.com/css?family=Bitter|Ubuntu" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Allerta+Stencil|Bungee+Inline|Monoton|Rammetto+One|Sigmar+One" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu:700i" rel="stylesheet">
-    <title>PORTAFOLIO</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.28/css/uikit.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato|Roboto|Source+Code+Pro|Varela+Round" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
 </head>
 
 <body>
-    <div class="uk-position-relative cabecera">
-        <!-- <img src="#" alt=""> -->
-        <div class="uk-position-center nav-title">
-            <h1 class="nombre">ANNA KARINA LUZ DURAN</h1>
-            <h4>Desarrolladora Front-End & Diseñadora Industrial</h4>
+
+    <div class="header uk-offcanvas-content" id="inicio">
+        <div class="nav" id="start">
+            <ul class="nav__items">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#aboutMe">Quién Soy</a></li>
+                <li><a href="#iDo">Perfil</a></li>
+                <li><a href="#project">Proyectos</a></li>
+                <li><a href=" #offcanvas-push" uk-toggle="target: #offcanvas-push">Redes</a></li>
+                
+            </ul>
+
         </div>
-        <a class="uk-button uk-button-primary" href="#quien-soy" uk-scroll>
-            <span uk-icon="icon: chevron-down; ratio: 4" class="uk-position-bottom-center scrolldown sacudir"></span>
-        </a>
-        <div class="uk-position-top">
-            <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
-                <div class="uk-navbar-right">
-                    <ul class="uk-navbar-nav items-menu">
-                        <li class="uk-active"><a href="#">INICIO</a></li>
-                        <li><a href="#quien-soy">QUIEN SOY</a></li>
-                        <li>
-                            <a href="#queHago">QUE HAGO</a>
-                            <div class="uk-navbar-dropdown">
-                                <ul class="uk-nav uk-navbar-dropdown-nav quehago">
-                                    <li class="uk-active"><a href="#">SKILLS</a></li>
-                                    <li><a href="https://github.com/Annakluz" target="_blank">GITHUB</a></li>
-                                    <li><a href="https://www.linkedin.com/in/ludak21/" target="_blank">LINKEDIN</a></li>
-                                    <li><a href="behance.net/annaluzdur088c" target="_blank">BEHANCE</a></li>
-                                    <li><a href="https://dribbble.com/ludak" target="_blank">DRIBBLE</a></li>
-                                    <li class="uk-nav-divider"></li>
-                                    <li><a href="assets/AANNCV2.pdf" target="_blank">CV</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li><a href="#proyecto">PROYECTOS</a></li>
-                    </ul>
-                </div>
-            </nav>
+        <div class="animation"></div>
+        <div class="header__text">FRONT END & DISEÑADORA INDUSTRIAL</div>
+        <div class="header__scroll">
+            <p class="header__scroll--text">SCROLL</p>
+            <a class="header__scroll--icon" href="#aboutMe" uk-icon="icon: arrow-down; ratio: 2"></a>
+        </div>
+
+
+
+
+        <div class="nav__modal--push" id="offcanvas-push" uk-offcanvas="mode: push; overlay: true; flip: true;">
+            <div class="uk-offcanvas-bar">
+
+                <button class="uk-offcanvas-close" type="button" uk-close></button>
+
+
+
+                <ul class="uk-nav uk-nav-center uk-margin-auto-vertical">
+                    
+                    
+                    <li><a href="https://github.com/Annakluz" target="_blank" >GITHUB</a></li>
+                    
+                    <li><a href="https://www.linkedin.com/in/ludak21/" target="_blank">LINKEDIN</a></li>
+                    
+                    <li><a href="https://www.behance.net/annaluzdur088c" target="_blank" >BEHANCE</a></li>
+                    <li class="uk-nav-divider"></li>
+                    <li><a href="assets/AANNCV2.pdf">CV</a></li>
+                </ul>
+
+
+
+            </div>
         </div>
     </div>
-    <section id="quien-soy" class="about">
-        <div class="titulo-nombre">
-            Soy Anna
+    <section class="about" id="aboutMe">
+        <div class="about__title">Anna Karina <br> Luz Durán</div>
+        <div class="about__subtitle">
+            <h1>...en constante actualización</h1>
         </div>
-        <div class="actualizacion">
-        <h1 class="azul-titulo">...en constante actualización</h1>
-        </div>
-        <article  class="QuienSoy">
-
-
-            <div class="textoinicio-contenedor">
-
-
-                <p class="texto">Radico en la Ciudad de México, me encanta construir cosas, resolver problemas y entender al usuario, por esa razón estoy tan involucrada en el desarrollo web. Actualmente estoy inmersa principalmente en el desarrollo con HTML5 CSS3 y Javascript pero mis capacidades no se limitan a ello. Estudie Diseño Industrial en la Universidad Aútonoma Metropolitana lo que me ha permitido estudiar más a fondo al usuario y su interacción con las diferentes interfaces.
-                
-                
-
-                </p>
+        <article class="about__card">
+            <div class="about__card--left">
+                <p>Radico en la Ciudad de México, me encanta construir cosas, resolver problemas y entender al usuario, por esa razón estoy tan involucrada en el desarrollo web. Actualmente estoy inmersa principalmente en el desarrollo con HTML5, CSS3 y Javascript pero mis capacidades no se limitan a ello. Estudie Diseño Industrial en la Universidad Autónoma Metropolitana lo que me ha permitido estudiar más a fondo al usuario y su interacción con las diferentes interfaces.</p>
             </div>
-
-            <div class="post" uk-scrollspy="cls: uk-animation-slide-right; repeat: true">
-
-                <a href="assets/AANNCV2.pdf" target="_blank">MIRA MI CV <span class="delado" uk-icon="icon: chevron-right; ratio: 3"></span> </a>
-                
+            <div class="about__card--right " uk-scrollspy="cls: uk-animation-slide-right; repeat: true ">
+                <a class="cv" href="assets/AANNCV2.pdf" target="_blank">MIRA MI CV <span class="delado" uk-icon="icon: chevron-right; ratio: 5"></span> </a>
             </div>
         </article>
-    </section>
-    <div>
-        <div class>
-            <div class="">
-                <h3 class=" titulo-nombre" id="queHago">¿En que puedo ayudarte?</h3>
 
-            </div>
-        </div>
+    </section>
+
+    <div class="ido" id="iDo">
+            <h1 class="ido__title">¿En que puedo ayudarte?</h1>
     </div>
-    <section class="skills">
-        <div class="cont-programacion" uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
+    <section class="ido__cards">
+        <div class="ido__cards--left uk-card uk-card-body" uk-scrollspy="cls: uk-animation-slide-left; repeat: true ">
             <div>
-            <h2 class="azul-titulo">Desarrollo websites</h2>
+                <h1 class="ido--subtitle">Desarrollo websites</h1>
             </div>
-            <div>
-                <p class="texto"> Cuando codeeo utilizo diversos frameworks de CSS3 como Boostrap, Materialize y Uikit y algunas librerias de Javascript entre las que destacan Jquery y Vanilla. Mantenerme al tanto de las actualizaciones y novedades es uno de mis principales pasatiempos. 
-                Tener un codigo limpio y entendible es mi principal meta.  </p>
+            <div class="ido__p">
+                <p > Cuando codeeo utilizo diversos frameworks de CSS3 como Boostrap, Materialize y Uikit y algunas librerías de Javascript entre las que destacan Jquery y Vanilla. Mantenerme al tanto de las actualizaciones y novedades es uno de mis principales pasatiempos. Tener un código limpio y entendible es mi principal meta. </p>
             </div>
-            <div class="contenedor-cita">
-                <p class="citas">"Talk is Cheap, Show me The Code"</p>
-                <p class="azul">...anónimo</p>
+            <div >
+                <h2 class="card--quote">"Talk is Cheap, Show me The Code"</h2>
+                <h3 class="card--autor">...anónimo</h3>
             </div>
         </div>
-        <div class="logos-contenedor">
-        
-        <div><img src="assets/img/bootstrap.png" alt=""></div>
-        <div class="materialize"><img src="assets/img/materialize.png" alt=""></div>
-        <div class="uikit"><img src="assets/img/uiKit-Circle-Logo.png" alt=""></div>
-        <div class="html"><img src="assets/img/logostodos.png" class="logostodos" alt=""></div>
-        <div class="jquery"><img src="assets/img/jquery.png" alt=""></div>
+        <div class="container-logos">
+
+            <div><img src="assets/img/bootstrap.png" alt=""></div>
+            <div class="materialize"><img src="assets/img/materialize.png" alt=""></div>
+            <div class="uikit"><img src="assets/img/uiKit-Circle-Logo.png" alt=""></div>
+            <div class="html"><img src="assets/img/logostodos.png" class="logostodos" alt=""></div>
+            <div class="jquery"><img src="assets/img/jquery.png" alt=""></div>
+            <div class="sass"><img src="assets/img/Logo-SASS.png" alt=""></div>
+            <div class="react"><img src="assets/img/react-logo.png" alt=""></div>
+            <div class="node"><img src="assets/img/nodejs_logo.png" alt=""></div>
+            <div class="npm"><img src="assets/img/npm.png" alt=""></div>
         </div>
     </section>
-    <div>
-        <div class>
-            <div class="contenedor-titulo negro">
-                <h3 class=" titulo-blanco" id="proyecto">Proyectos</h3>
+    
+            <div class=" color-grey project__title" id="project">
+                <h3 class="ido__title" id="proyecto">Proyectos</h3>
 
-            </div>
         </div>
-    </div>
-    <section class="proyectos-contenedor negro">
-    
-    <div class="uk-text-center">
-        <div class="uk-inline-clip uk-transition-toggle">
-            <img src="assets/img/labcar.png" alt="">
-            <div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-default">
-                <p class="uk-h4 uk-margin-remove">HTML5 CSS3 JS BOOTSTRAP <br><a href="https://annakluz.github.io/AnnaLuz-Sprint4/" target="_blank">ver proyecto</a></p>
+   
+    <section class="color-grey project__container">
+
+        <div class="uk-text-center">
+            <div class="uk-inline-clip uk-transition-toggle">
+                <img src="assets/img/labcar.png" alt="">
+                <div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-default">
+                    <p class="uk-h4 uk-margin-remove">HTML5 CSS3 JS BOOTSTRAP <br><a href="https://annakluz.github.io/AnnaLuz-Sprint4/" target="_blank">ver proyecto</a></p>
+                </div>
             </div>
+            <p class="uk-margin-small-top">LABCAR</p>
         </div>
-        <p class="uk-margin-small-top">LABCAR</p>
-    </div>
-    <div class="uk-text-center">
-        <div class="uk-inline-clip uk-transition-toggle">
-            <img src="assets/img/paseante1.png" alt="">
-            <div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-default">
-                <p class="uk-h4 uk-margin-remove red">HTML5 CSS3 JS BOOTSTRAP COLABORATIVO <br><a href="https://gabylutrejo.github.io/passeante/" target="_blank">ver proyecto</a></p>
+        <div class="uk-text-center">
+            <div class="uk-inline-clip uk-transition-toggle">
+                <img src="assets/img/paseante1.png" alt="">
+                <div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-default">
+                    <p class="uk-h4 uk-margin-remove red">HTML5 CSS3 JS BOOTSTRAP COLABORATIVO <br><a href="https://gabylutrejo.github.io/passeante/" target="_blank">ver proyecto</a></p>
+                </div>
             </div>
+            <p class="uk-margin-small-top">PASEANTE</p>
         </div>
-        <p class="uk-margin-small-top">PASEANTE</p>
-    </div>
-    <div class="uk-text-center">
-        <div class="uk-inline-clip uk-transition-toggle">
-            <img class="proyecto-img" src="assets/img/applove.png" alt="">
-            <div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-default">
-                <p class="uk-h4 uk-margin-remove">HTML5 CSS3 JS <br><a href="https://annakluz.github.io/sprint4-applove/" target="_blank">ver proyecto</a></p>
+        <div class="uk-text-center">
+            <div class="uk-inline-clip uk-transition-toggle">
+                <img class="proyecto-img" src="assets/img/applove.png" alt="">
+                <div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-default">
+                    <p class="uk-h4 uk-margin-remove">HTML5 CSS3 JS <br><a href="https://annakluz.github.io/sprint4-applove/" target="_blank">ver proyecto</a></p>
+                </div>
             </div>
+            <p class="uk-margin-small-top">APPLOVE</p>
         </div>
-        <p class="uk-margin-small-top">APPLOVE</p>
-    </div>
-    <div class="uk-text-center">
-        <div class="uk-inline-clip uk-transition-toggle">
-            <img class="proyecto-img" src="assets/img/bootstrap-theme.png" alt="">
-            <div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-default">
-                <p class="uk-h4 uk-margin-remove">HTML5 CSS3 JS BOOTSTRAP<br><a href="https://annakluz.github.io/bootstrap-theme/" target="_blank">ver proyecto</a></p>
+        <div class="uk-text-center">
+            <div class="uk-inline-clip uk-transition-toggle">
+                <img class="proyecto-img" src="assets/img/bootstrap-theme.png" alt="">
+                <div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-default">
+                    <p class="uk-h4 uk-margin-remove">HTML5 CSS3 JS BOOTSTRAP<br><a href="https://annakluz.github.io/bootstrap-theme/" target="_blank">ver proyecto</a></p>
+                </div>
             </div>
+            <p class="uk-margin-small-top">BOOTSTRAP THEME</p>
         </div>
-        <p class="uk-margin-small-top">BOOTSTRAP THEME</p>
-    </div>
-    <div class="uk-text-center">
-        <div class="uk-inline-clip uk-transition-toggle">
-            <img class="proyecto-img" src="assets/img/experimenta.png" alt="">
-            <div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-default">
-                <p class="uk-h4 uk-margin-remove">HTML5 CSS3 JS SASS UIKIT  <br><a href="https://annakluz.github.io/socios_experimenta/">ver proyecto</a></p>
+        <div class="uk-text-center">
+            <div class="uk-inline-clip uk-transition-toggle">
+                <img class="proyecto-img" src="assets/img/experimenta.png" alt="">
+                <div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-default">
+                    <p class="uk-h4 uk-margin-remove">HTML5 CSS3 JS SASS UIKIT <br><a href="https://annakluz.github.io/socios_experimenta/" target="_blank">ver proyecto</a></p>
+                </div>
             </div>
+            <p class="uk-margin-small-top">EXPERIMENTA</p>
         </div>
-        <p class="uk-margin-small-top">EXPERIMENTA</p>
-    </div>
-    <div class="uk-text-center">
-        <div class="uk-inline-clip uk-transition-toggle">
-            <img class="proyecto-img" src="assets/img/khane-theme.png" alt="">
-            <div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-default">
-                <p class="uk-h4 uk-margin-remove">HTML5 CSS3 JS <br><a href="https://annakluz.github.io/plantilla-kaneTHeme/" target="_blank">ver proyecto</a></p>
+        <div class="uk-text-center">
+            <div class="uk-inline-clip uk-transition-toggle">
+                <img class="proyecto-img" src="assets/img/khane-theme.png" alt="">
+                <div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-default">
+                    <p class="uk-h4 uk-margin-remove">HTML5 CSS3 JS <br><a href="https://annakluz.github.io/plantilla-kaneTHeme/" target="_blank">ver proyecto</a></p>
+                </div>
             </div>
+            <p class="uk-margin-small-top">Khane Theme</p>
         </div>
-        <p class="uk-margin-small-top">Khane Theme</p>
-    </div>
-    
+
 
     </section>
-    <section class="quest negro">
-        <h1 class="titulo-blanco">Contactame</h1>
+    <section class="form">
+        <p class="ido__title">Contactame</p>
         <form action="">
-           <div class="preguntas">
-            <input class="cuestion" type="text" placeholder="nombre">
-            <input class="cuestion" type="text" placeholder="e-mail">
-            <input class="cuestion" type="text" placeholder="télefono">
+            <div class="preguntas">
+                <input class="cuestion" type="text" placeholder="nombre">
+                <input class="cuestion" type="text" placeholder="e-mail">
+                <input class="cuestion" type="text" placeholder="télefono">
             </div>
-            <div class="area-texto">
-            <textarea name="" id="mensaje" cols="50" rows="10"></textarea>
+            <div class="text-area">
+                <textarea name="" id="mensaje" ></textarea>
             </div>
-            <div class="boton">
-            <button class="enviar" type="submit">Send</button>
+            <div class="button">
+                <button class="send" type="submit">Send</button>
             </div>
         </form>
     </section>
     <section class="foot">
-       <div>
-        <a href="https://github.com/Annakluz" target="_blank" class="uk-icon-button redes" uk-icon="icon: github"></a>
-        <a href="https://www.linkedin.com/in/ludak21/" target="_blank" class="uk-icon-button redes" uk-icon="icon: linkedin"></a>
-        <a href="https://www.behance.net/annaluzdur088c" target="_blank" class="uk-icon-button redes" uk-icon="icon: behance"></a>
-        <a href="https://dribbble.com/ludak" target="_blank" class="uk-icon-button redes" uk-icon="icon: dribbble"></a>
+        <div>
+            <a href="https://github.com/Annakluz" target="_blank" class="uk-icon-button redes" uk-icon="icon: github"></a>
+            <a href="https://www.linkedin.com/in/ludak21/" target="_blank" class="uk-icon-button redes" uk-icon="icon: linkedin"></a>
+            <a href="https://www.behance.net/annaluzdur088c" target="_blank" class="uk-icon-button redes" uk-icon="icon: behance"></a>
+            <a href="https://dribbble.com/ludak" target="_blank" class="uk-icon-button redes" uk-icon="icon: dribbble"></a>
         </div>
         <div>
-            <p>LUDAK 2017</p>
+            <p class="mr">LUDAK 2017</p>
         </div>
     </section>
 
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/uikit.min.js"></script>
-    <script src="js/uikit-icons.min.js"></script>
-    <script src="js/app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.28/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.28/js/uikit-icons.min.js"></script>
+    <script src="app.js"></script>
 </body>
 
 </html>

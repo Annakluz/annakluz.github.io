@@ -1,5 +1,6 @@
 html {
     box-sizing: border-box;
+    font-size: 16px;
 }
 
 *,
@@ -9,6 +10,371 @@ html {
     margin: 0;
 }
 
+@font-face {
+    font-family: ailerons;
+    font-style: normal;
+    font-weight: normal;
+    src: url(Ailerons-Typeface.otf)
+}
+
 body {
     font-family: 'Ubuntu', sans-serif;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10vh auto 10vh 15vh;
+    justify-items: center;
+    background-color: #263544;
+}
+
+.nav {
+    display: grid;
+    color: white;
+    width: 80vw;
+    margin-bottom: -5vh;
+    justify-content: flex-end;
+    align-content: flex-end;
+    animation-name: navDown;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes navDown {
+    from {
+        transform: translateY(-100px);
+    }
+    to {
+        transform: translateY(0px;
+        )
+    }
+}
+
+.nav__items {
+    margin-right: 5vh;
+    margin-top: 5vh;
+    font-family: ailerons;
+    font-size: 1.7rem;
+    list-style: none;
+}
+
+.nav__items li {
+    display: inline-block;
+}
+
+.nav__items li a {
+    text-decoration: none;
+    color: #b4b6b7;
+    margin-left: 3vh;
+}
+
+.nav__items li a:hover {
+    color: #b53b2d
+}
+
+.animation {
+    grid-row-start: 2;
+    height: 500px;
+    width: 500px;
+    background-image: url("../assets/animacion.svg");
+    background-size: cover;
+    animation-name: logo;
+    animation-duration: 1.5s;
+    animation-timing-function: steps(9);
+    background-position: right;
+}
+
+@keyframes logo {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -4500px 0;
+    }
+}
+
+.header__text {
+    font-family: ailerons;
+    font-size: 2.5rem;
+    color: #b53b2d;
+    animation-name: textLogo;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes textLogo {
+    0% {
+        opacity: 0%;
+        transform: translateY(0);
+    }
+    30% {
+        opacity: 30%;
+    }
+    100% {
+        opacity: 100%;
+        transform: translateY(-180px);
+    }
+}
+
+.nav__modal--push {
+    background-color: rgba(181, 59, 45, .7);
+}
+
+.uk-nav {
+    font-family: ailerons;
+    font-size: 2rem;
+}
+
+.uk-nav li a:hover {
+    color: #b53b2d;
+}
+
+.header__scroll {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    animation-name: scrollUp;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes scrollUp {
+    from {
+        transform: translateY(-180px)
+    }
+    to {
+        transform: translateY(-80px)
+    }
+}
+
+.header__scroll--text {
+    transform: rotate(-90deg);
+    font-family: ailerons;
+    margin-bottom: 5vh;
+}
+
+.header__scroll--icon {
+    color: #08457e;
+    animation: scrollUpDown 3s infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+
+@keyframes scrollUpDown {
+    0% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(-2vh);
+    }
+    50% {
+        transform: translateY(0vh);
+    }
+    75% {
+        transform: translateY(-2vh);
+    }
+    100% {
+        transform: translateY(-0vh);
+    }
+}
+
+.about {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    justify-items: center;
+}
+
+.about__title {
+    color: #b53b2d;
+    font-family: ailerons;
+    font-size: 5rem;
+    margin-top: 3vh;
+    width: 70%;
+    text-align: center;
+}
+
+.about__subtitle h1 {
+    color: #006763;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.about__card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10vh;
+    justify-items: center;
+    align-items: center;
+    margin: 5vh;
+}
+
+.about__card--left {
+    text-align: justify;
+}
+
+.about__card--right {
+    background-color: #263544;
+    font-family: ailerons;
+    color: white;
+    font-size: 3em;
+    width: 30vw;
+    text-align: center;
+    padding: 1em;
+    margin: 1em;
+}
+
+.about__card--right a{
+    text-decoration: none;
+    color: white;
+}
+
+.about__card--right a:hover{
+    text-decoration: none;
+    color:#b53b2d
+}
+
+.ido {
+    display: grid;
+    margin: 5vh;
+    text-align: center;
+}
+
+.ido__title {
+    font-family: ailerons;
+    color: #b53b2d;
+    font-size: 5rem;
+}
+
+.cv {
+    font-family: ailerons;
+    font-size: 5rem;
+    color: white;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.ido__p {
+    text-align: justify;
+}
+
+.ido__cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10vh;
+    justify-items: center;
+    align-items: center;
+    margin: 5vh;
+}
+
+.ido--subtitle {
+    color: #006763;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.card--quote {
+    color: #b53b2d;
+    text-align: right;
+    font-weight: 500;
+}
+
+.card--autor {
+    text-align: right;
+    color: #006763;
+    font-weight: 500;
+}
+
+.container-logos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, 15vh);
+    align-items: center;
+    padding: 2rem;
+}
+
+.container-logos {
+    width: 70%;
+    min-width: 50%;
+}
+
+.color-grey {
+    background-color: #263544;
+}
+
+.project__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 60vh;
+    grid-gap: 1em;
+    padding: 5vh;
+    justify-items: center;
+    align-items: center;
+}
+
+.project__title {
+    display: grid;
+    padding: 5vh;
+    text-align: center;
+    margin-bottom: -5vh;
+}
+
+.form {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    justify-items: center;
+}
+
+input {
+    height: 5vh;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #263544;
+    color: white;
+    border: 2px solid #b53b2d;
+    border-radius: 1vh;
+}
+
+.text-area {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    margin: 5vh;
+}
+
+textarea {
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #263544;
+    color: white;
+    border: 2px solid #b53b2d;
+    border-radius: 1vh;
+    width: 100%;
+    height: 30vh;
+}
+
+.button {
+    text-align: center;
+    margin: 1vh;
+}
+
+.send {
+    background-color: #b53b2d;
+    color: white;
+    font-family: ailerons;
+    border: 0px;
+    width: 10vh;
+    height: 5vh;
+}
+
+.foot {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid grid-template-rows: 10vh;
+    justify-items: center;
+    font-family: ailerons;
+    background-color: #263544;
+    padding: 3rem;
+    color:
 }
