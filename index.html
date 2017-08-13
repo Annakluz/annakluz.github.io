@@ -21,11 +21,29 @@
                 <li><a href="#iDo">Perfil</a></li>
                 <li><a href="#project">Proyectos</a></li>
                 <li><a href=" #offcanvas-push" uk-toggle="target: #offcanvas-push">Redes</a></li>
-                
+
             </ul>
 
         </div>
-        <div class="animation"></div>
+        <div class="header__menu">
+            <!--esta clase-->
+            <div class="menu__responsive--fix uk-position-fixed">
+                <button class="uk-button uk-button-text menu--btn" type="button"><img src="assets/img/menured.svg" alt=""></button>
+                <div uk-dropdown>
+                    <ul class="uk-nav uk-dropdown-nav menu__responsive--items">
+                        <li><a href="#start" class="responsive__items">Inicio</a></li>
+                        <li><a href="#aboutMe">Quién Soy</a></li>
+                        <li><a href="#iDo">Perfil</a></li>
+                        <li><a href="#project">Proyecto</a></li>
+                        <li class="uk-nav-divider"></li>
+                        <li><a href="#social">Redes</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!--esta-->
+            <div class="animation"></div>
+            <div></div>
+        </div>
         <div class="header__text">FRONT END & DISEÑADORA INDUSTRIAL</div>
         <div class="header__scroll">
             <p class="header__scroll--text">SCROLL</p>
@@ -43,13 +61,13 @@
 
 
                 <ul class="uk-nav uk-nav-center uk-margin-auto-vertical">
-                    
-                    
-                    <li><a href="https://github.com/Annakluz" target="_blank" >GITHUB</a></li>
-                    
+
+
+                    <li><a href="https://github.com/Annakluz" target="_blank">GITHUB</a></li>
+
                     <li><a href="https://www.linkedin.com/in/ludak21/" target="_blank">LINKEDIN</a></li>
-                    
-                    <li><a href="https://www.behance.net/annaluzdur088c" target="_blank" >BEHANCE</a></li>
+
+                    <li><a href="https://www.behance.net/annaluzdur088c" target="_blank">BEHANCE</a></li>
                     <li class="uk-nav-divider"></li>
                     <li><a href="assets/AANNCV2.pdf">CV</a></li>
                 </ul>
@@ -76,7 +94,7 @@
     </section>
 
     <div class="ido" id="iDo">
-            <h1 class="ido__title">¿En que puedo ayudarte?</h1>
+        <h1 class="ido__title">¿En que puedo ayudarte?</h1>
     </div>
     <section class="ido__cards">
         <div class="ido__cards--left uk-card uk-card-body" uk-scrollspy="cls: uk-animation-slide-left; repeat: true ">
@@ -84,9 +102,9 @@
                 <h1 class="ido--subtitle">Desarrollo websites</h1>
             </div>
             <div class="ido__p">
-                <p > Cuando codeeo utilizo diversos frameworks de CSS3 como Boostrap, Materialize y Uikit y algunas librerías de Javascript entre las que destacan Jquery y Vanilla. Mantenerme al tanto de las actualizaciones y novedades es uno de mis principales pasatiempos. Tener un código limpio y entendible es mi principal meta. </p>
+                <p> Cuando codeeo utilizo diversos frameworks de CSS3 como Boostrap, Materialize y Uikit y algunas librerías de Javascript entre las que destacan Jquery y Vanilla. Mantenerme al tanto de las actualizaciones y novedades es uno de mis principales pasatiempos. Tener un código limpio y entendible es mi principal meta. </p>
             </div>
-            <div >
+            <div>
                 <h2 class="card--quote">"Talk is Cheap, Show me The Code"</h2>
                 <h3 class="card--autor">...anónimo</h3>
             </div>
@@ -104,12 +122,12 @@
             <div class="npm"><img src="assets/img/npm.png" alt=""></div>
         </div>
     </section>
-    
-            <div class=" color-grey project__title" id="project">
-                <h3 class="ido__title" id="proyecto">Proyectos</h3>
 
-        </div>
-   
+    <div class=" color-grey project__title" id="project">
+        <h3 class="ido__title" id="proyecto">Proyectos</h3>
+
+    </div>
+
     <section class="color-grey project__container">
 
         <div class="uk-text-center">
@@ -178,14 +196,14 @@
                 <input class="cuestion" type="text" placeholder="télefono">
             </div>
             <div class="text-area">
-                <textarea name="" id="mensaje" ></textarea>
+                <textarea name="" id="mensaje"></textarea>
             </div>
             <div class="button">
                 <button class="send" type="submit">Send</button>
             </div>
         </form>
     </section>
-    <section class="foot">
+    <section class="foot" id="social">
         <div>
             <a href="https://github.com/Annakluz" target="_blank" class="uk-icon-button redes" uk-icon="icon: github"></a>
             <a href="https://www.linkedin.com/in/ludak21/" target="_blank" class="uk-icon-button redes" uk-icon="icon: linkedin"></a>
@@ -200,7 +218,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.28/js/uikit.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.28/js/uikit-icons.min.js"></script>
-    <script src="app.js"></script>
+    <script src="js/app.js"></script>
 </body>
 
 </html>

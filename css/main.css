@@ -14,7 +14,7 @@ html {
     font-family: ailerons;
     font-style: normal;
     font-weight: normal;
-    src: url("../assets/Ailerons-Typeface.otf")
+    src: url(Ailerons-Typeface.otf)
 }
 
 body {
@@ -74,8 +74,16 @@ body {
     color: #b53b2d
 }
 
+/* aqui*/
+.header__menu{
+    display: grid;
+    grid-template-columns:27vw 30vw 30vw;
+
+}
+
 .animation {
     grid-row-start: 2;
+    grid-column-start: 2;
     height: 500px;
     width: 500px;
     background-image: url("../assets/animacion.svg");
@@ -85,6 +93,19 @@ body {
     animation-timing-function: steps(9);
     background-position: right;
 }
+
+.menu__responsive--fix {
+    margin-top: -7vh
+    
+}
+
+
+
+.menu--btn img{
+    width: 3vw;
+}
+
+
 
 @keyframes logo {
     0% {
@@ -156,6 +177,8 @@ body {
     font-family: ailerons;
     margin-bottom: 5vh;
 }
+
+
 
 .header__scroll--icon {
     color: #08457e;
