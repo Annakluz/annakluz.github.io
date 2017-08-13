@@ -14,7 +14,7 @@ html {
     font-family: ailerons;
     font-style: normal;
     font-weight: normal;
-    src:url("../assets/img/Ailerons-Typeface.otf)
+    src: url("../assets/Ailerons-Typeface.otf")
 }
 
 body {
@@ -27,7 +27,6 @@ body {
     grid-template-rows: 10vh auto 10vh 15vh;
     justify-items: center;
     background-color: #263544;
-   
 }
 
 .nav {
@@ -95,12 +94,10 @@ body {
     background-position: right;
 }
 
-.menu__responsive--fix {
-    margin-top: -7vh
+.header__menu {
+    
     
 }
-
-
 
 .menu--btn img{
     width: 3vw;
