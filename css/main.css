@@ -74,11 +74,12 @@ body {
     color: #b53b2d
 }
 
-/* aqui*/
-.header__menu{
-    display: grid;
-    grid-template-columns:27vw 30vw 30vw;
 
+/* aqui*/
+
+.header__menu {
+    display: grid;
+    grid-template-columns: 27vw 30vw 30vw;
 }
 
 .animation {
@@ -96,14 +97,11 @@ body {
 
 .menu__responsive--fix {
     margin-top: -8vh;
-    
 }
 
-.menu--btn img{
+.menu--btn img {
     width: 3vw;
 }
-
-
 
 @keyframes logo {
     0% {
@@ -176,8 +174,6 @@ body {
     margin-bottom: 5vh;
 }
 
-
-
 .header__scroll--icon {
     color: #08457e;
     animation: scrollUpDown 3s infinite;
@@ -248,14 +244,14 @@ body {
     margin: 1em;
 }
 
-.about__card--right a{
+.about__card--right a {
     text-decoration: none;
     color: white;
 }
 
-.about__card--right a:hover{
+.about__card--right a:hover {
     text-decoration: none;
-    color:#b53b2d
+    color: #b53b2d
 }
 
 .ido {
@@ -398,4 +394,138 @@ textarea {
     background-color: #263544;
     padding: 3rem;
     color:
+}
+
+
+/*MEDIAS QUERIES.......*/
+
+@media screen and (max-width: 420px) {
+    .header {
+        width: auto;
+        max-width: 420px;
+    }
+    .nav__items {
+        display: none;
+    }
+    .header__menu {
+        width: auto;
+        max-width: 420px;
+    }
+    .animation {
+        width: 200px;
+        height: 200px;
+        background-size: cover;
+        margin-left: -5vh;
+    }
+    @keyframes logo {
+        0% {
+            background-position: 0 0;
+        }
+        100% {
+            background-position: -1800px 0;
+        }
+    }
+    .header__text {
+        font-size: 1rem;
+        margin-right: 2vh;
+    }
+    @keyframes textLogo {
+        0% {
+            opacity: 0%;
+            transform: translateY(180px);
+        }
+        30% {
+            opacity: 30%;
+        }
+        100% {
+            opacity: 100%;
+            transform: translateY(-70px);
+        }
+    }
+    @keyframes scrollUp {
+        from {
+            transform: translateY(-180px)
+        }
+        to {
+            transform: translateY(-20px)
+        }
+    }
+    
+    .about{
+         width: auto;
+        max-width: 420px;
+        
+    }
+    
+    .about__title{
+        font-size: 3rem;
+    }
+    .about__subtitle{
+        width: auto;
+        max-width: 420px;
+    }
+    .about__subtitle h1{
+        font-size: 1rem;
+        
+    }
+    
+    .about__card{
+        width: auto;
+        max-width: 420px;
+        grid-template-columns: 1fr;
+    }
+    
+   
+    .about__card--right{
+        font-size: .5rem;
+        height: auto;
+    }
+    
+    .cv{
+        font-size: 1.5rem;
+    }
+    
+    .ido{
+        width: auto;
+        max-width: 420px;
+    }
+    
+    .ido__cards{
+        width: auto;
+        max-width: 420px;
+        grid-template-columns: 1fr;
+    }
+    .ido__title{
+        font-size: 3rem;
+    }
+    
+    .project__title{
+        width: auto;
+        max-width: 420px;
+    }
+    
+    .project__container{
+        width: auto;
+        max-width: 420px;
+    }
+    
+    .form{
+        width: auto;
+        max-width: 420px;
+        
+    }
+    
+    .preguntas{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    
+    .menu__responsive--fix{
+        margin-left: 2vh;
+    }
+    
+ 
+    
+
+
 }
