@@ -21,6 +21,8 @@ body {
     font-family: 'Ubuntu', sans-serif;
 }
 
+
+
 .header {
     display: grid;
     grid-template-columns: 1fr;
@@ -97,10 +99,11 @@ body {
 
 .menu__responsive--fix {
     margin-top: -8vh;
+    display: none;
 }
 
 .menu--btn img {
-    width: 3vw;
+    width: 6vw;
 }
 
 @keyframes logo {
@@ -454,6 +457,7 @@ textarea {
     .about{
          width: auto;
         max-width: 420px;
+        padding: 4vh;
         
     }
     
@@ -507,6 +511,7 @@ textarea {
     .project__container{
         width: auto;
         max-width: 420px;
+        grid-template-columns: 1fr;
     }
     
     .form{
@@ -522,6 +527,7 @@ textarea {
     
     .menu__responsive--fix{
         margin-left: 2vh;
+        display: grid
     }
     
  

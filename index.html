@@ -191,17 +191,17 @@
     </section>
     <section class="form">
         <p class="ido__title">Contactame</p>
-        <form action="">
+        <form action="enviar.php" id="formulario" name="contact-form" method="post">
             <div class="preguntas">
-                <input class="cuestion" type="text" placeholder="nombre">
-                <input class="cuestion" type="text" placeholder="e-mail">
-                <input class="cuestion" type="text" placeholder="télefono">
+                <input class="cuestion" id="nombre" type="text" placeholder="nombre" name="nombre">
+                <input class="cuestion" id="mail" type="text" placeholder="e-mail" name="mail">
+                <input class="cuestion" id="tel" type="text" placeholder="télefono" name="telefono">
             </div>
             <div class="text-area">
-                <textarea name="" id="mensaje"></textarea>
+                <textarea name="mensaje" id="mensaje"></textarea>
             </div>
             <div class="button">
-                <button class="send" type="submit">Send</button>
+                <button class="send" id="send" type="submit">Send</button>
             </div>
         </form>
     </section>
