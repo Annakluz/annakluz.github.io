@@ -535,3 +535,7 @@ textarea {
 
 
 }
+
+.magento{
+    grid-column: 2;
+}
