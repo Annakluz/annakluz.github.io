@@ -1,0 +1,179 @@
+@import "var.scss";
+
+body {
+    overflow-x: hidden;
+}
+
+.header_menu {
+    z-index: 9999;
+}
+
+.collaborative_project {
+    grid-template-columns: 1fr 1fr;
+    @media screen and (max-width: $tablet){
+    align-items: flex-start;
+    grid-template-rows: auto;
+    }
+    @media screen and (max-width: $small) {
+        grid-template-columns: 1fr;
+    }
+}
+
+.nav{
+    @media screen and (max-width: $tablet) {
+    display: none;
+    }
+}
+.nav__items {
+    @media screen and (max-width: $tablet) {
+        display: none
+    }
+}
+
+.header__menu {
+    @media screen and (max-width: $tablet) {
+        grid-template-columns: 15% 70% 15%;
+        width: 100%
+    }
+    @media screen and (max-width: $small){
+        margin-top: 20px
+    }
+
+    .menu__responsive--fix {
+        @media screen and (max-width: $tablet) {
+            width: 100%;
+            padding-left: 30px;
+        }
+
+        .uk-open {
+            ul {
+                li {
+                    a {
+                        @media screen and (max-width: $tablet) {
+                            font-size: 1.5rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .animation {
+        @media screen and (max-width: $tablet) {
+            height: 300px;
+            width: 300px;
+            justify-self: center
+        }
+        @media screen and (max-width: $small){
+            height: 200px;
+            width: 200px;
+            margin-left: 0;
+            grid-row: 1/2;
+        }
+    }
+}
+
+.header {
+    position: relative;
+    @media screen and (max-width: $small){
+        grid-template-rows: auto;
+        height: 350px;
+        
+    }
+
+    .header__text {
+        @media screen and (max-width: $tablet) {
+            font-size: 1.5rem;
+            position: absolute;
+            top: 35vh;
+        }
+        @media screen and (max-width: $small) {
+            top: 40vh;
+            font-size: 1rem;
+        }
+    }
+
+    .header__scroll {
+        @media screen and (max-width: $tablet) {
+            position: absolute;
+            top: 31vh;
+        }
+        @media screen and (max-width: $small){
+            top: 43vh;
+        }
+    }
+}
+
+.menu__responsive--fix {
+    @media screen and (max-width: $tablet) {
+        display: block;
+        z-index: 999;
+        margin: 0;
+    }
+    button{
+        img{
+            @media screen and (max-width: $small){
+                width: 10vw;
+            } 
+        }
+    }
+}
+
+.about__card--left {
+    p {
+        @media screen and (max-width: $tablet) {
+            margin: 0
+        }
+    }
+}
+
+.about__card--right{
+    @media screen and (max-width: $small){
+        width: 100%;
+    }
+}
+.cv {
+    @media screen and (max-width: $tablet) {
+        font-size: 2rem;
+    }
+}
+
+
+.delado{
+    svg{
+        @media screen and (max-width: $small){
+        width: 100px;
+        }
+    }
+}
+
+.container-logos{
+    @media screen and (max-width: $small){
+        width: 90%;
+    }
+}
+.form {
+    .ido__mail {
+        font-size: 3rem;//
+        @media screen and (max-width: $small) {
+            font-size: 1.5rem;
+        }
+    }
+}
+
+.ido__title{
+    @media screen and (max-width: $small) {
+        font-size: 2rem;
+    }
+}
+.project__title{
+    @media screen and (max-width: $tablet){
+        //padding-bottom: 0;
+    }
+}
+
+.ido__cards--left{
+    @media screen and (max-width: $small){
+        padding: 0;
+    }
+}
