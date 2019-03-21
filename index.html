@@ -3,11 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
     <title>LUDAK</title>
     <link rel="icon" sizes="16x16" href="./assets/img/ludak-favicon.png">
     <link rel="stylesheet" href="css/main.css">
-   
+    <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Bitter|Ubuntu" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.28/css/uikit.min.css" />
     <link href="https://fonts.googleapis.com/css?family=Lato|Roboto|Source+Code+Pro|Varela+Round" rel="stylesheet">
@@ -16,8 +16,8 @@
 
 <body>
 
-    <div class="header uk-offcanvas-content" id="inicio">
-        <div class="nav" id="start">
+    <div class="header uk-offcanvas-content" id="inicio" >
+        <div class="nav" id="start" >
             <ul class="nav__items">
                 <li><a href="#">Inicio</a></li>
                 <li><a href="#aboutMe">Quién Soy</a></li>
@@ -90,7 +90,7 @@
                 <p>Radico en la Ciudad de México, me encanta construir cosas, resolver problemas y entender al usuario, por esa razón estoy tan involucrada en el desarrollo web. Actualmente estoy inmersa principalmente en el desarrollo con HTML5, CSS3 y Javascript pero mis capacidades no se limitan a ello. Estudie Diseño Industrial en la Universidad Autónoma Metropolitana lo que me ha permitido estudiar más a fondo al usuario y su interacción con las diferentes interfaces.</p>
             </div>
             <div class="about__card--right " uk-scrollspy="cls: uk-animation-slide-right; repeat: true ">
-                <a class="cv" href="assets/ANNCV3.pdf" target="_blank">MIRA MI CV <span class="delado" uk-icon="icon: chevron-right; ratio: 5"></span> </a>
+                <a class="cv" href="assets/ANNCV3.pdf" target="_blank">MI CV <span class="delado" uk-icon="icon: chevron-right; ratio: 5"></span> </a>
             </div>
         </article>
 
@@ -105,7 +105,7 @@
                 <h1 class="ido--subtitle">Desarrollo websites</h1>
             </div>
             <div class="ido__p">
-                <p> Cuando codeeo utilizo diversos frameworks de CSS3 como Boostrap, Materialize y Uikit y algunas librerías de Javascript entre las que destacan Jquery y Vanilla. Mantenerme al tanto de las actualizaciones y novedades es uno de mis principales pasatiempos. Tener un código limpio y entendible es mi principal meta. </p>
+                <p> Cuando codeeo utilizo diversos frameworks de CSS3 como Boostrap, Materialize y Uikit y algunas librerías de Javascript. Mantenerme al tanto de las actualizaciones y novedades es uno de mis principales pasatiempos. Tener un código limpio y entendible es mi principal meta. </p>
             </div>
             <div>
                 <h2 class="card--quote">"My work is a game, a very SERIUS game"</h2>
@@ -126,9 +126,32 @@
             <div class="magento"> <img src="assets/img/magento.png" alt=""> </div>
         </div>
     </section>
-
     <div class=" color-grey project__title" id="project">
-        <h3 class="ido__title" id="proyecto">Proyectos</h3>
+        <h3 class="ido__title" id="proyecto">Proyectos Colaborativos</h3>
+
+    </div>
+    <section class="color-grey project__container collaborative_project">
+        <div class="uk-text-center">
+            <div class="uk-inline-clip uk-transition-toggle">
+                <img src="assets/img/scorpion.png" alt="">
+                <div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-default">
+                    <p class="uk-h4 uk-margin-remove red">Magento 2.2 <br><a href="https://tienda.scorpion.com.mx/" target="_blank">ver proyecto</a></p>
+                </div>
+            </div>
+            <p class="uk-margin-small-top">SCORPION</p>
+        </div>
+        <div class="uk-text-center">
+            <div class="uk-inline-clip uk-transition-toggle">
+                <img class="proyecto-img" src="assets/img/liizt.png" alt="">
+                <div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-default">
+                    <p class="uk-h4 uk-margin-remove">Magento 1.9  <br><a href="https://liizt.com/" target="_blank">ver proyecto</a></p>
+                </div>
+            </div>
+            <p class="uk-margin-small-top">LIIZT</p>
+        </div>
+    </section>
+    <div class=" color-grey project__title" id="project">
+        <h3 class="ido__title" id="proyecto">Proyectos Personales</h3>
 
     </div>
 
@@ -192,8 +215,8 @@
 
     </section>
     <section class="form">
-        <p class="ido__title">Contactame</p>
-        
+        <p class="ido__title">Contactame:</p>
+        <p class="ido__mail">anna.luz.duran@gmail.com</p>
     </section>
     <section class="foot">
         <div>
